@@ -1,7 +1,7 @@
 # Retail Expansion Analysis with Lasso and Ridge Regressions
 
 <p align="center">
-  <img src="liquor.jpeg">
+  <img src="images/liquor.jpeg">
 </p>        
 <br>
 
