@@ -90,19 +90,23 @@ I then looked for any statistical relationships, correlations, or other relevant
 - I then studied correlations between predictors. 
 - I saw from the correlation matrices that `num_stores` and `stores_per_area` are highly correlated. Furthermore, both are highly correlated to the target variable `sale_dollars`. Both things also happen with `store_population_ratio` and `consumption_per_capita`.
 
+A heatmap of correlations using `Seaborn` follows:
 
-   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/hm3.png" width="500">
+<p align="center">
+   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/hm3.png" width="400">
+<p/>
 
-To generate scatter plots for all the predictors (which provided similar information as the correlation matrices) I used `Seaborn`:
+To generate scatter plots for all the predictors (which provided similar information as the correlation matrices) we write:
 ```
 g = sns.pairplot(df[cols_to_keep])
 for ax in g.axes.flatten():    # from [6]
     for tick in ax.get_xticklabels(): 
         tick.set(rotation=90);
 ```
-Examples of scatter plots are:
+<p align="center">
+   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/output.png" width="700">
+<p/>
 
-   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/output.png" width="900">
 
 <a id = 'models'></a>
 ## Building the models
@@ -158,7 +162,9 @@ model = ridge.fit(X,y)
 
 I then plotted the predictions versus the true value:
 
-   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/test.jpg" width="700">
+<p align="center">
+   <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/test.jpg" width="500">
+<p/>
 
 <a id = 'conc'></a>
 ## Conclusions and recommendations:
