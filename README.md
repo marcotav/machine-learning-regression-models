@@ -6,7 +6,7 @@
 
 <br/>
 <p align="center">
-  <img src='https://github.com/marcotav/machine-learning-regression-models/blob/master/retail/images/liquor.jpeg' width="400">
+  <img src='https://github.com/marcotav/machine-learning-regression-models/blob/master/retail/images/liquor.jpeg' width="300">
 </p>
 
 
