@@ -93,11 +93,6 @@ I then looked for any statistical relationships, correlations, or other relevant
 
    <img src="https://github.com/marcotav/retail-store-expansion-analysis/blob/master/hm3.png" width="500">
 
-```
-cols_to_keep = ['num_stores', 'store_population_ratio', 'consumption_per_capita', 'stores_per_area', u'per_capita_income']
-df[cols_to_keep].corr()
-sns.heatmap(df[cols_to_keep].corr())
-```
 To generate scatter plots for all the predictors (which provided similar information as the correlation matrices) I used `Seaborn`:
 ```
 g = sns.pairplot(df[cols_to_keep])
