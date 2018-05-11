@@ -1,4 +1,4 @@
-# machine-learning-regression-models
+# Machine Learning Regression Models
 
 <br/>
 <p align="center">
@@ -11,8 +11,8 @@
 
 ## Index
 
-* [retail](#retail)
+* [retail-store-expansion-analysis-with-lasso-and-ridge-regressions](#retail)
 
-## retail
+## Retail Store Expansion Analysis with Lasso and Ridge Regressions
 Based on a dataset containing the spirits purchase information of Iowa Class E liquor licensees by product and date of purchase (link) this project provides recommendations on where to open new stores in the state of Iowa. To devise an expansion strategy, I first needed to understand the data and for that I conducted a thorough exploratory data analysis (EDA). With the data in hand I built multivariate regression models of total sales by county, using both Lasso and Ridge regularization, and based on these models, I made recommendations about new locations. 
 
