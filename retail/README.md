@@ -177,3 +177,5 @@ The following recommendations were provided:
 - The county with weaker competition is Butler. This could provided untapped potential. However, the absence of a reasonable number of stores may indicate, as observed before, that the county's population is simply not interested in this category of product. Again, further investigation must be carried out.
 
 
+I strongly recommend reading the using [nbviewer](http://nbviewer.jupyter.org/github/marcotav/machine-learning-regression-models/blob/master/retail/notebooks/retail-recommendations.ipynb).
+
