@@ -3,23 +3,26 @@
 **The code is available [here](http://nbviewer.jupyter.org/github/marcotav/machine-learning-regression-models/blob/master/retail/notebooks/retail-recommendations.ipynb) or by clicking on the.**
 
 
-<br>
-
-
-<br/>
-<p align="center">
-  <img src='https://github.com/marcotav/machine-learning-regression-models/blob/master/retail/images/liquor.jpeg' width="300">
-</p>
-
-
 
 ### Index
 
 * [retail-store-expansion-analysis-with-lasso-and-ridge-regressions](#retail-store-expansion-analysis-with-lasso-and-ridge-regressions)
+* [conjoint-analysis](#conjoint-analysis)
 
 ### retail-store-expansion-analysis-with-lasso-and-ridge-regressions
+
+<br/>
+<p align="center">
+  <img src='https://github.com/marcotav/machine-learning-regression-models/blob/master/retail/images/liquor.jpeg' width="200">
+</p>
+<br>
+
+
 
 Based on a dataset containing the spirits purchase information of Iowa Class E liquor licensees by product and date of purchase this project provides recommendations on where to open new stores in the state of Iowa. To devise an expansion strategy, I first needed to understand the data and for that I conducted a thorough exploratory data analysis (EDA). With the data in hand I built multivariate regression models of total sales by county, using both Lasso and Ridge regularization, and based on these models, I made recommendations about new locations. 
 
 I strongly recommend reading the notebook using [nbviewer](http://nbviewer.jupyter.org/github/marcotav/machine-learning-regression-models/blob/master/retail/notebooks/retail-recommendations.ipynb).
 
+### conjoint-analysis
+
+In preparation.
