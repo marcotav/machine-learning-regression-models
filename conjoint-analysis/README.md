@@ -30,7 +30,7 @@ The basic assumptions of Conjoint Analysis are:
 The linear regression model with conjoint preference data has the form:
 
 <p align="center">
-  <img src="images/conjoint_reg.png">
+  <img src="images/conjoint_reg.png" width='175'>
 </p>        
 <br>
 
