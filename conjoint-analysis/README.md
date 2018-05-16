@@ -1,25 +1,52 @@
-## Conjoint Analysis [[view code]](http://nbviewer.jupyter.org/github/marcotav/machine-learning-regression-models/blob/master/retail/notebooks/retail-recommendations.ipynb) 
+## Conjoint Analysis 
 ![image title](https://img.shields.io/badge/work-in%20progress-blue.svg) ![image title](https://img.shields.io/badge/statsmodels-v0.8.0-blue.svg) ![Image title](https://img.shields.io/badge/sklearn-0.19.1-orange.svg) ![Image title](https://img.shields.io/badge/pandas-0.22.0-red.svg) ![Image title](https://img.shields.io/badge/numpy-1.14.2-green.svg) ![Image title](https://img.shields.io/badge/matplotlib-v2.1.2-orange.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**The code is available [here](http://nbviewer.jupyter.org/github/marcotav/machine-learning-regression-models/blob/master/retail/notebooks/retail-recommendations.ipynb) or by clicking on the [view code] link above.**
-
-<br>
 
 <p align="center">
-  <img src="images/liquor.jpeg">
+  <a href="#basic"> Basic Assumptions </a> •
+  <a href="#steps"> Steps </a> •
+  <a href="#imports"> Importing stuff </a>  
+</p>
+
+<a id = 'basic'></a>
+### Basic Assumptions
+
+The basic assumptions of Conjoint Analysis are:
+- Product are a bundle of attributes
+- The utility of a product is a (simple) function of the utilities of each of its attributes
+- Behavior such as purchases can be predicted from utilities
+
+<a id = 'steps'></a>
+### Steps
+
+- One must first choose the attributes to be included 
+- The number of levels for each attribute must also be chosen
+- Definition of hypothetical products (all combinations of attribute levels would generate too many products)
+- One should make sure that:
+ - All combinations of levels for pairs of attributes occur in some product 
+ - The subset of products should have orthogonal design i.e. the chances of finding a given level of some attribute B in a product should be the same irregardless of the level of another attribute A. 
+- Estimation of utilities (usually using ordinary linear regression with dummy variables)
+
+The linear regression model with conjoint preference data has the form:
+
+<p align="center">
+  <img src="images/conjoint_reg.png">
 </p>        
 <br>
 
-<p align="center">
-  <a href="#summary"> Summary </a> •
-  <a href="#pre"> Preamble </a> •
-  <a href="#data"> Getting data </a> •
-  <a href="#munge_eda"> Data Munging and EDA </a> •
-  <a href="#mine"> Mining the data </a> •
-  <a href="#models"> Building the models </a> •
-  <a href="#plots"> Plotting results </a> •
-  <a href="#conc"> Conclusions and recommendations</a> 
-</p>
+where, `R_i` is the ranking/rating assigned to product i, `X_{ij}^k` is a dummy variable which is 1 if product i has level j on attribute k and `u_j` is the utility coefficient for level j on attribute k. 
 
-<a id = 'summary'></a>
-## Summary
+<a id = 'imports'></a>
+### Importing stuff
+
+import numpy as np
+import pandas as pd
+
+```
+def import_data(filename):
+    df = pd.read_csv(filename)
+    return df
+
+filename = 'mobile_services_ranking.csv'
+df = import_data(filename)
+```
