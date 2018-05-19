@@ -36,17 +36,5 @@ The linear regression model with conjoint preference data has the form:
 
 where, `R_i` is the ranking/rating assigned to product i, `X_{ij}^k` is a dummy variable which is 1 if product i has level j on attribute k and `u_j` is the utility coefficient for level j on attribute k. 
 
-<a id = 'imports'></a>
-### Importing stuff
 
-import numpy as np
-import pandas as pd
-
-```
-def import_data(filename):
-    df = pd.read_csv(filename)
-    return df
-
-filename = 'mobile_services_ranking.csv'
-df = import_data(filename)
-```
+## To be continued.
