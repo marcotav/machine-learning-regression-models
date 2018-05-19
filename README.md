@@ -25,4 +25,10 @@ I strongly recommend reading the notebook using [nbviewer](http://nbviewer.jupyt
 
 ### conjoint-analysis
 
-In preparation.
+Conjoint analysis is a technique that allows researchers to predict consumers' choice share. The analysis can be programmed using standard question types, such as the MaxDiff variation of the Matrix Table question. Instead of directly asking the survey respondents which attributes they find most relevant, conjoint analysis asks respondents to evaluate potential product profiles which include multiple product features 
+
+There are several ways to show to respondents the product profiles. In Choice-Based Conjoint (CBC) respondents are shown multiple product conceptsn and asked which option they would choose. By varying the features shown to the respondents and observing their responses to the product profiles, one can statistically deduce the most desired product features and which attributes have the most impact on choice. 
+
+The end result is a set of preference scores or *part-worth utilities* for each level of each attribute.
+
+In this notebook I show how to use Python to calculate the utilities. The notebook is heavily based on [this course](https://www.lynda.com/R-tutorials/Data-Science-Marketing/533306-2.html) and [this book](https://www.amazon.com/Marketing-Data-Science-Techniques-Predictive/dp/0133886557).
